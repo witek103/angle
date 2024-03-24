@@ -1,0 +1,17 @@
+[package]
+name = "angle"
+version = "0.1.0"
+authors = ["Witold Lipieta <witek103@gmail.com>"]
+edition = "2021"
+license = "MIT OR Apache-2.0"
+description = "Angle struct for keeping track of orientation in no_std"
+keywords = ["angle", "radians", "degrees", "orientation"]
+categories = ["no-std", "embedded"]
+repository = "https://github.com/witek103/angle"
+readme = "README.md"
+
+[dependencies]
+libm = "0.2.8"
+
+[features]
+use_std = []
