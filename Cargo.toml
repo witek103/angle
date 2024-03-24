@@ -11,7 +11,9 @@ repository = "https://github.com/witek103/angle"
 readme = "README.md"
 
 [dependencies]
+defmt = { version = "0.3.6", optional = true }
 libm = "0.2.8"
 
 [features]
 use_std = []
+use_defmt = ["dep:defmt"]

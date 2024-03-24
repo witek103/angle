@@ -93,6 +93,13 @@ impl Display for Angle {
     }
 }
 
+#[cfg(feature = "use_defmt")]
+impl defmt::Format for Angle {
+    fn format(&self, f: defmt::Formatter) {
+        defmt::write!(f, "{}deg", self.as_degrees());
+    }
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
